@@ -12,6 +12,7 @@ class User: Person() {
 
 
 ```
+//1
 fun <T : Comparable<T>> List<T>.quickSort(): List<T> {
   if (size < 2) return this
   val pivot = first()
@@ -23,6 +24,7 @@ fun <T : Comparable<T>> List<T>.quickSort(): List<T> {
 
 
 ```
+//2
 fun <T : Comparable<T>> List<T>.quickSort(): List<T> {
   if (this.size < 2) return this
   val pivot = this.first()
@@ -40,7 +42,7 @@ listOf("C", "D", "A", "B").quickSort() // [A, B, C, D]
 
 
 ```
-//1
+//3
 class Node(val name: String) {
 
   fun makeChild(childName: String) =
@@ -71,7 +73,7 @@ class Node(val name: String) {
 
 
 ```
-//2
+//4
 class Node(val name: String) {
 
   fun makeChild(childName: String) =
@@ -90,6 +92,7 @@ fun main() {
 
 
 ```
+//5
 class Node(val name: String) {
 
   fun makeChild(childName: String) =
@@ -102,7 +105,7 @@ class Node(val name: String) {
 
 
 ```
-//3
+//6
 class Node(val name: String) {
 
    fun makeChild(childName: String) =
@@ -151,6 +154,7 @@ table {
 
 
 ```
+//7
 @DslMarker
 annotation class HtmlDsl
 

@@ -1,4 +1,5 @@
 ```
+//1
 class User(var name: String, var surname: String)
 
 val user = User("Marcin", "Moskała")
@@ -6,6 +7,7 @@ val user = User("Marcin", "Moskała")
 
 
 ```
+//2
 data class Student(
     val name: String,
     val surname: String,
@@ -35,6 +37,7 @@ class QuotationPresenter(
 
 
 ```
+//3
 class Pizza {
     val size: String
     val cheese: Int
@@ -70,6 +73,7 @@ class Pizza {
 
 
 ```
+//4
 class Pizza(
     val size: String,
     val cheese: Int = 0,
@@ -105,6 +109,7 @@ val villagePizza = Pizza(
 
 
 ```
+//5
 class Pizza private constructor(
     val size: String,
     val cheese: Int,

@@ -44,6 +44,7 @@ private fun Source.toEntry() = SourceEntity().apply {
 
 
 ```
+//1
 fun Iterable<Int>.product() =
      fold(1) { acc, i -> acc * i }
 ```

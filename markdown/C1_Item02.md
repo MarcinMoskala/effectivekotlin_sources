@@ -45,6 +45,7 @@ print(num) // 1000
 
 
 ```
+//1
 class Counter {
     private val lock = Any()
     private var num = 0
@@ -120,6 +121,7 @@ print(num.value) // 1000
 
 
 ```
+//2
 data class User(val name: String)
 
 class UserRepository {
@@ -144,6 +146,7 @@ print(userRepository.loadAll()) // [User(name=Kirill)]
 
 
 ```
+//3
 data class User(val name: String)
 
 class UserRepository {
@@ -157,6 +160,7 @@ class UserRepository {
 
 
 ```
+//4
 data class User(val name: String)
 
 class UserRepository {

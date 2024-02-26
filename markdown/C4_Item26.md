@@ -17,6 +17,7 @@ fun isPasswordValid(text: String): Boolean {
 
 
 ```
+//1
 val MAX_THREADS = 10
 ```
 
@@ -151,6 +152,7 @@ val messageDisplay: MessageDisplay = TestMessageDisplay()
 
 
 ```
+//2
 var nextId: Int = 0
 
 // Usage
@@ -159,6 +161,7 @@ val newId = nextId++
 
 
 ```
+//3
 private var nextId: Int = 0
 fun getNextId(): Int = nextId++
 
@@ -168,6 +171,7 @@ val newId = getNextId()
 
 
 ```
+//4
 data class Id(private val id: Int)
 
 private var nextId: Int = 0

@@ -1,4 +1,5 @@
 ```
+//1
 var a = 10
 val list: MutableList<Int> = mutableListOf()
 ```
@@ -48,7 +49,7 @@ print(list) // [1, 2, 3, 4]
 
 
 ```
-//1
+//2
 var name: String = "Marcin"
 var surname: String = "Moskała"
 val fullName
@@ -63,7 +64,7 @@ fun main() {
 
 
 ```
-//2
+//3
 fun calculate(): Int {
     print("Calculating... ")
     return 42
@@ -83,6 +84,7 @@ fun main() {
 
 
 ```
+//4
 interface Element {
     val active: Boolean
 }
@@ -115,6 +117,7 @@ fun main() {
 
 
 ```
+//5
 inline fun <T, R> Iterable<T>.map(
     transformation: (T) -> R
 ): List<R> {
@@ -188,6 +191,7 @@ print(user) // User(name=Maja, surname=Moskała)
 
 
 ```
+//6
 val list1: MutableList<Int> = mutableListOf()
 var list2: List<Int> = listOf()
 ```
@@ -237,6 +241,7 @@ var announcements = listOf<Announcement>()
 
 
 ```
+//7
 // Don’t do that
 var list3 = mutableListOf<Int>()
 ```

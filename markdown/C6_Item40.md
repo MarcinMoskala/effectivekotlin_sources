@@ -1,4 +1,5 @@
 ```
+//1
 class ValueMatcher<T> private constructor(
     private val value: T? = null,
     private val matcher: Matcher
@@ -48,6 +49,7 @@ class ValueMatcher<T> private constructor(
 
 
 ```
+//2
 sealed class ValueMatcher<T> {
     abstract fun match(value: T): Boolean
 

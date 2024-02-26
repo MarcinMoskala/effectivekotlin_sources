@@ -1,4 +1,5 @@
 ```
+//1
 @JvmInline
 value class Name(private val value: String) {
     // ...
@@ -36,6 +37,7 @@ Name.`greet-impl`(name)
 
 
 ```
+//2
 interface Timer {
    fun callAfter(time: Int, callback: () -> Unit)
 }
@@ -43,6 +45,7 @@ interface Timer {
 
 
 ```
+//3
 interface Timer {
    fun callAfter(timeMillis: Int, callback: () -> Unit)
 }
@@ -50,6 +53,7 @@ interface Timer {
 
 
 ```
+//4
 interface User {
    fun decideAboutTime(): Int
    fun wakeUp()
@@ -125,6 +129,7 @@ val time: Duration = 10.minutes
 
 
 ```
+//5
 @JvmInline
 value class StudentId(val value: String)
 
@@ -136,6 +141,7 @@ data class Student(val id: StudentId, val classId: ClassId)
 
 
 ```
+//6
 @JvmInline
 value class OptionalDouble(val value: Double) {
     
@@ -177,7 +183,7 @@ setUpTimer(Millis(456789))
 
 
 ```
-//1
+//7
 @JvmInline
 value class Millis(val milliseconds: Long) {
    val millis: Long get() = milliseconds
@@ -221,7 +227,7 @@ class View {
 
 
 ```
-//2
+//8
 typealias Seconds = Int
 typealias Millis = Int
 

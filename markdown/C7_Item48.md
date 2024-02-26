@@ -16,6 +16,7 @@ fun main() {
 
 
 ```
+//2
 sealed class ValueChange<out T>
 data object Keep : ValueChange<Nothing>()
 data object SetDefault : ValueChange<Nothing>()
@@ -43,6 +44,7 @@ data class DeleteAll<T> : StoreMessage<T>
 
 
 ```
+//3
 sealed interface StoreMessage<out T>
 data class Save<T>(val data: T) : StoreMessage<T>
 data object DeleteAll : StoreMessage<Nothing>

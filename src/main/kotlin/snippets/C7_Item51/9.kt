@@ -1,0 +1,43 @@
+package f_C7_Item51.s_9
+
+inline fun threeThreePrintThree() {
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+}
+
+inline fun threeThreeThreePrintThree() {
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+}

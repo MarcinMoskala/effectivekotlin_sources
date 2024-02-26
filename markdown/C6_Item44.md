@@ -7,6 +7,7 @@ obj1 <= obj2 // translates to obj1.compareTo(obj2) <= 0
 
 
 ```
+//1
 class User(val name: String, val surname: String)
 
 val names = listOf<User>(/*...*/)
@@ -42,6 +43,7 @@ val sorted = names.sortedWith(User.DISPLAY_ORDER)
 
 
 ```
+//2
 class User(
    val name: String,
    val surname: String
@@ -53,6 +55,7 @@ class User(
 
 
 ```
+//3
 class User(
     val name: String,
     val surname: String

@@ -32,6 +32,7 @@ fun sendEmail(user: User, message: String) {
 
 
 ```
+//1
 fun factorial(n: Int): Long {
     require(n >= 0) {
         "Cannot calculate factorial of $n " +
@@ -93,6 +94,7 @@ fun changeDress(person: Person) {
 
 
 ```
+//2
 class Person(val email: String?)
 
 fun sendEmail(person: Person, message: String) {
@@ -123,6 +125,7 @@ fun sendEmail(person: Person, text: String) {
 
 
 ```
+//3
 fun largestOf(a: Int, b: Int, c: Int, d: Int): Int =
     listOf(a, b, c, d).maxOrNull()!!
 ```

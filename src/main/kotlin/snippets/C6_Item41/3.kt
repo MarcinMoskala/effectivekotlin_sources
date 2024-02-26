@@ -1,37 +1,18 @@
 package f_C6_Item41.s_3
 
-enum class PaymentOption {
-    CASH,
-    CARD,
-    TRANSFER
-}
+import java.math.BigDecimal
 
-inline fun <reified T : Enum<T>> printEnumValues() {
-    for (value in enumValues<T>()) {
-        println(value)
-    }
+enum class PaymentOption(val commission: BigDecimal) {
+   CASH(BigDecimal.ONE),
+   CARD(BigDecimal.TEN),
+   TRANSFER(BigDecimal.ZERO)
 }
 
 fun main() {
-    val options = PaymentOption.values()
-    println(options.map { it.name })
-    // [CASH, CARD, TRANSFER]
+   println(PaymentOption.CARD.commission) // 10
+   println(PaymentOption.TRANSFER.commission) // 0
 
-    val options2: Array<PaymentOption> =
-        enumValues<PaymentOption>()
-    println(options2.map { it.name })
-    // [CASH, CARD, TRANSFER]
-
-    val option: PaymentOption =
-        PaymentOption.valueOf("CARD")
-    println(option) // CARD
-
-    val option2: PaymentOption =
-        enumValueOf<PaymentOption>("CARD")
-    println(option2) // CARD
-
-    printEnumValues<PaymentOption>()
-    // CASH
-    // CARD
-    // TRANSFER
+   val paymentOption: PaymentOption =
+       PaymentOption.values().random()
+   println(paymentOption.commission) // 0, 1 or 10
 }

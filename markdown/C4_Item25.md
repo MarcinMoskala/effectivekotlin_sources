@@ -1,4 +1,5 @@
 ```
+//1
 class CoffeeMachine {
 
   fun makeCoffee() {
@@ -11,6 +12,7 @@ class CoffeeMachine {
 
 
 ```
+//2
 class CoffeeMachine {
 
   fun makeCoffee() {

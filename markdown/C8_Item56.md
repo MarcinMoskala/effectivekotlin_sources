@@ -23,6 +23,7 @@ val bestFormatPerQuality: Map<Quality, Resolution> =
 
 
 ```
+//1
 public inline fun <T, K> Iterable<T>.groupingBy(
     crossinline keySelector: (T) -> K
 ): Grouping<T, K> {

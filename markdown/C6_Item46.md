@@ -1,16 +1,19 @@
 ```
+//1
 fun String.isPhoneNumber(): Boolean =
     length == 7 && all { it.isDigit() }
 ```
 
 
 ```
+//2
 fun isPhoneNumber(`$this`: String): Boolean =
    `$this`.length == 7 && `$this`.all { it.isDigit() }
 ```
 
 
 ```
+//3
 interface PhoneBook {
    fun String.isPhoneNumber(): Boolean
 }
@@ -91,6 +94,7 @@ val boundedRefX = book::isPhoneNumber // ERROR
 
 
 ```
+//4
 class A {
    val a = 10
 }

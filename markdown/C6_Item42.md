@@ -84,6 +84,7 @@ data class DateTime(
 
 
 ```
+//1
 class User(
     val id: Int,
     val name: String,
@@ -128,6 +129,7 @@ assertEquals(now1, now2)
 
 
 ```
+//2
 sealed class Time
 data class TimePoint(val millis: Long) : Time()
 object Now : Time()
@@ -135,6 +137,7 @@ object Now : Time()
 
 
 ```
+//3
 class Complex(
     val real: Double,
     val imaginary: Double
@@ -172,6 +175,7 @@ Complex(1.0, 0.0) == 1.0 // ERROR
 
 
 ```
+//4
 open class Date(
     val year: Int,
     val month: Int,
@@ -253,7 +257,7 @@ o1.date == o3.date // true
 
 
 ```
-//1
+//5
 import java.net.URL
 
 fun main() {

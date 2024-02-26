@@ -1,4 +1,5 @@
 ```
+//1
 class CounterSet<T>(
   private val innerSet: MutableSet<T> = mutableSetOf()
 ) : MutableSet<T> by innerSet {
@@ -20,6 +21,7 @@ class CounterSet<T>(
 
 
 ```
+//2
 class MutableLazyHolder<T>(val initializer: () -> T) {
    private var value: Any? = Any()
    private var initialized = false
@@ -41,6 +43,7 @@ class MutableLazyHolder<T>(val initializer: () -> T) {
 
 
 ```
+//3
 class User(
       val name: String,
       val surname: String,

@@ -10,6 +10,7 @@ class Right<R>(val value: R) : Either<Nothing, R>
 
 
 ```
+//1
 sealed class ValueChange<out T>
 object Keep: ValueChange<Nothing>()
 object SetDefault: ValueChange<Nothing>()

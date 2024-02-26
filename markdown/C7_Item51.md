@@ -69,6 +69,7 @@ print(String::class.simpleName) // String
 
 
 ```
+//1
 class Worker
 class Manager
 
@@ -104,6 +105,7 @@ val service: BusinessService by inject()
 
 
 ```
+//2
 inline fun print(message: Any?) {
    System.out.print(message)
 }
@@ -111,6 +113,7 @@ inline fun print(message: Any?) {
 
 
 ```
+//3
 class OnClickListener : () -> Unit {
    override fun invoke() {
        // ...
@@ -120,6 +123,7 @@ class OnClickListener : () -> Unit {
 
 
 ```
+//4
 inline fun repeat(times: Int, action: (Int) -> Unit) {
    for (index in 0 until times) {
        action(index)
@@ -224,7 +228,7 @@ fun main() {
 
 
 ```
-//1
+//5
 fun main() {
    repeat(10) {
        print(it)
@@ -258,6 +262,7 @@ private class Reader {
 
 
 ```
+//6
 inline fun a() {
    b()
 }
@@ -271,6 +276,7 @@ inline fun c() {
 
 
 ```
+//7
 inline fun printThree() {
    print(3)
 }
@@ -302,6 +308,7 @@ inline fun threeThreeThreePrintThree() {
 
 
 ```
+//8
 inline fun printThree() {
    print(3)
 }
@@ -315,6 +322,7 @@ inline fun threePrintThree() {
 
 
 ```
+//9
 inline fun threeThreePrintThree() {
    print(3)
    print(3)
@@ -360,6 +368,7 @@ inline fun threeThreeThreePrintThree() {
 
 
 ```
+//10
 inline fun requestNewToken(
    hasToken: Boolean,
    crossinline onRefresh: () -> Unit,

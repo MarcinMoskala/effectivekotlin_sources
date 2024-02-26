@@ -1,10 +1,12 @@
 ```
+//1
 fun <T : Comparable<T>> Iterable<T>.countMax(): Int =
     count { it == this.maxOrNull() }
 ```
 
 
 ```
+//2
 fun <T : Comparable<T>> Iterable<T>.countMax(): Int {
     val max = this.maxOrNull()
     return count { it == max }
@@ -37,6 +39,7 @@ fun String.isValidIpAddress(): Boolean =
 
 
 ```
+//3
 private val IS_VALID_IP_REGEX by lazy {
    ("\\A(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}"+
    "(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\z").toRegex()

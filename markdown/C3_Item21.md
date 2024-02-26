@@ -1,4 +1,5 @@
 ```
+//1
 inline fun <T> Iterable<T>.filter(
    predicate: (T) -> Boolean
 ): List<T> {
@@ -28,6 +29,7 @@ class ListAdapter<T: ItemAdaper>(/*...*/) { /*...*/ }
 
 
 ```
+//2
 inline fun <T, R : Any> Iterable<T>.mapNotNull(
   transform: (T) -> R?
 ): List<R> {

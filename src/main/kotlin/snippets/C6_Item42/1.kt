@@ -1,9 +1,12 @@
 package f_C6_Item42.s_1
 
-import java.net.URL
+class User(
+    val id: Int,
+    val name: String,
+    val surname: String
+) {
+    override fun equals(other: Any?): Boolean =
+        other is User && other.id == id
 
-fun main() {
-    val enWiki = URL("https://en.wikipedia.org/")
-    val wiki = URL("https://wikipedia.org/")
-    println(enWiki == wiki)
+    override fun hashCode(): Int = id
 }

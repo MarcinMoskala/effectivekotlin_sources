@@ -1,4 +1,5 @@
 ```
+//1
 operator fun <T> Iterable<T>.plus(element: T): List<T> {
     if (this is Collection) return this.plus(element)
     val result = ArrayList<T>()
@@ -10,6 +11,7 @@ operator fun <T> Iterable<T>.plus(element: T): List<T> {
 
 
 ```
+//2
 inline fun <T, R> Iterable<T>.map(
     transform: (T) -> R
 ): List<R> {
@@ -24,6 +26,7 @@ inline fun <T, R> Iterable<T>.map(
 
 
 ```
+//3
 // This is not how map is implemented
 inline fun <T, R> Iterable<T>.map(
     transform: (T) -> R

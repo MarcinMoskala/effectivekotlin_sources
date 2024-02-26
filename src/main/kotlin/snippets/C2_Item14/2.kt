@@ -1,16 +1,9 @@
 package f_C2_Item14.s_2
 
-class Node(val name: String) {
-
-  fun makeChild(childName: String) =
-      create("$name.$childName")
-          .apply { print("Created ${this?.name}") }
-
-  fun create(name: String): Node? = Node(name)
-}
-
-fun main() {
-   val node = Node("parent")
-   node.makeChild("child")
-   // Prints: Created parent.child
+fun <T : Comparable<T>> List<T>.quickSort(): List<T> {
+  if (this.size < 2) return this
+  val pivot = this.first()
+  val (smaller, bigger) = this.drop(1)
+      .partition { it < pivot }
+  return smaller.quickSort() + pivot + bigger.quickSort()
 }

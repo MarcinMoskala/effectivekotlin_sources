@@ -37,6 +37,7 @@ person?.takeIf { it.isAdult }
 
 
 ```
+//1
 class Person(val name: String)
 var person: Person? = null
 
@@ -71,6 +72,7 @@ print(abc) // ABC
 
 
 ```
+//2
 operator fun String.invoke(f: ()->String): String =
    this + f()
 

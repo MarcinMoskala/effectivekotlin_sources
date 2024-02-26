@@ -1,4 +1,5 @@
 ```
+//1
 class LinkedList<T>(
     val head: T,
     val tail: LinkedList<T>?
@@ -171,7 +172,7 @@ val flow: Flow = observable.asFlow()
 
 
 ```
-//1
+//2
 fun main() {
     val seq1 = sequence<Int> {
         repeat(10) {
@@ -235,6 +236,7 @@ val user3 = user.withSurname(newSurname)
 
 
 ```
+//3
 class A
 
 fun b() = A()
@@ -255,6 +257,7 @@ List(4) { "User$it" } // [User0, User1, User2, User3]
 
 
 ```
+//4
 public inline fun <T> List(
     size: Int,
     init: (index: Int) -> T

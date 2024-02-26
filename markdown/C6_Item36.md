@@ -1,4 +1,5 @@
 ```
+//1
 class ProfileLoader {
 
     fun load() {
@@ -20,6 +21,7 @@ class ImageLoader {
 
 
 ```
+//2
 abstract class LoaderWithProgressBar {
 
     fun load() {
@@ -48,6 +50,7 @@ class ImageLoader : LoaderWithProgressBar() {
 
 
 ```
+//3
 class ProgressBar {
     fun show() { 
         /* show progress bar */
@@ -95,6 +98,7 @@ class ImageLoader {
 
 
 ```
+//4
 abstract class InternetLoader(val showAlert: Boolean) {
 
     fun load() {
@@ -126,6 +130,7 @@ class ImageLoader : InternetLoader(showAlert = false) {
 
 
 ```
+//5
 abstract class Dog {
     open fun bark() {
         /*...*/
@@ -161,6 +166,7 @@ class RobotDog : Dog(), Robot() // Error
 
 
 ```
+//6
 class CounterSet<T> : HashSet<T>() {
     var elementsAdded: Int = 0
         private set
@@ -186,6 +192,7 @@ print(counterList.elementsAdded) // 6
 
 
 ```
+//7
 class CounterSet<T> : HashSet<T>() {
     var elementsAdded: Int = 0
         private set
@@ -222,6 +229,7 @@ print(counterList.elementsAdded) // 3
 
 
 ```
+//8
 class CounterSet<T> : MutableSet<T> {
     private val innerSet = HashSet<T>()
     var elementsAdded: Int = 0
@@ -267,6 +275,7 @@ class CounterSet<T> : MutableSet<T> {
 
 
 ```
+//9
 class CounterSet<T>(
     private val innerSet: MutableSet<T> = mutableSetOf()
 ) : MutableSet<T> by innerSet {

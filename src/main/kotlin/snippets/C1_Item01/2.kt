@@ -1,17 +1,12 @@
 package f_C1_Item01.s_2
 
-fun calculate(): Int {
-    print("Calculating... ")
-    return 42
-}
-
-val fizz = calculate() // Calculating...
-val buzz
-    get() = calculate()
+var name: String = "Marcin"
+var surname: String = "Moskała"
+val fullName
+    get() = "$name $surname"
 
 fun main() {
-    print(fizz) // 42
-    print(fizz) // 42
-    print(buzz) // Calculating... 42
-    print(buzz) // Calculating... 42
+    println(fullName) // Marcin Moskała
+    name = "Maja"
+    println(fullName) // Maja Moskała
 }

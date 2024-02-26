@@ -103,6 +103,7 @@ tasks {
 
 
 ```
+//1
 inline fun <T> Iterable<T>.filter(
     predicate: (T) -> Boolean
 ): List<T> {
@@ -118,11 +119,13 @@ inline fun <T> Iterable<T>.filter(
 
 
 ```
+//2
 fun plus(a: Int, b: Int) = a + b
 ```
 
 
 ```
+//3
 val plus1: (Int, Int) -> Int = { a, b -> a + b }
 val plus2: (Int, Int) -> Int = fun(a, b) = a + b
 val plus3: (Int, Int) -> Int = Int::plus
@@ -130,28 +133,33 @@ val plus3: (Int, Int) -> Int = Int::plus
 
 
 ```
+//4
 val plus4 = { a: Int, b: Int -> a + b }
 val plus5 = fun(a: Int, b: Int) = a + b
 ```
 
 
 ```
+//5
 fun Int.myPlus(other: Int) = this + other
 ```
 
 
 ```
+//6
 val myPlus = fun Int.(other: Int) = this + other
 ```
 
 
 ```
+//7
 val myPlus: Int.(Int) -> Int =
     fun Int.(other: Int) = this + other
 ```
 
 
 ```
+//8
 val myPlus: Int.(Int) -> Int = { this + it }
 ```
 
@@ -164,7 +172,7 @@ myPlus(1, 2)
 
 
 ```
-//1
+//9
 class Dialog {
     var title: String = ""
     var text: String = ""
@@ -181,7 +189,7 @@ fun main() {
 
 
 ```
-//2
+//10
 class Dialog {
     var title: String = ""
     var text: String = ""
@@ -202,7 +210,7 @@ fun main() {
 
 
 ```
-//3
+//11
 class Dialog {
     var title: String = ""
     var text: String = ""
@@ -274,6 +282,7 @@ class TdBuilder
 
 
 ```
+//12
 class TdBuilder {
     var text = ""
 

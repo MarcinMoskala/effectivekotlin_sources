@@ -1,4 +1,5 @@
 ```
+//1
 val a = 1
 fun fizz() {
     val b = 2
@@ -112,6 +113,7 @@ print(primes.take(10).toList())
 
 
 ```
+//2
 val primes: Sequence<Int> = sequence {
     var numbers = generateSequence(2) { it + 1 }
 

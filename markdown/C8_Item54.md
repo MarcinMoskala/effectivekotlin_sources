@@ -1,4 +1,5 @@
 ```
+//1
 interface Iterable<out T> {
     operator fun iterator(): Iterator<T>
 }
@@ -95,7 +96,7 @@ generateSequence(1) { it + 1 }
 
 
 ```
-//1
+//2
 import java.math.BigDecimal
 
 val fibonacci: Sequence<BigDecimal> = sequence {

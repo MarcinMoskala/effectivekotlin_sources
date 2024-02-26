@@ -1,4 +1,5 @@
 ```
+//1
 fun Int.factorial(): Int = (1..this).product()
 
 fun Iterable<Int>.product(): Int =

@@ -1,20 +1,24 @@
 ```
+//1
 val text = (1..10).joinToString("|")
 ```
 
 
 ```
+//2
 val text = (1..10).joinToString(separator = "|")
 ```
 
 
 ```
+//3
 val separator = "|"
 val text = (1..10).joinToString(separator)
 ```
 
 
 ```
+//4
 val separator = "|"
 val text = (1..10).joinToString(separator = separator)
 ```
@@ -41,6 +45,7 @@ sleep(100.milliseconds)
 
 
 ```
+//5
 fun sendEmail(to: String, message: String) {
     /*...*/
 }

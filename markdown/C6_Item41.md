@@ -1,4 +1,5 @@
 ```
+//1
 enum class PaymentOption {
     CASH,
     CARD,
@@ -8,7 +9,7 @@ enum class PaymentOption {
 
 
 ```
-//1
+//2
 import java.math.BigDecimal
 
 enum class PaymentOption {
@@ -38,7 +39,7 @@ fun main() {
 
 
 ```
-//2
+//3
 import java.math.BigDecimal
 
 enum class PaymentOption(val commission: BigDecimal) {
@@ -123,7 +124,7 @@ fun PaymentOption.startPayment(transaction: Transaction) {
 
 
 ```
-//3
+//4
 enum class PaymentOption {
     CASH,
     CARD,
@@ -163,6 +164,7 @@ fun main() {
 
 
 ```
+//5
 sealed class PaymentOption
 object Cash : PaymentOption()
 object Card : PaymentOption()

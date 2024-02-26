@@ -1,14 +1,13 @@
 package f_C5_Item34.s_1
 
-class Dialog {
-    var title: String = ""
-    var text: String = ""
-    fun show() { /*...*/ }
-}
-
-fun main() {
-    val dialog = Dialog()
-    dialog.title = "My dialog"
-    dialog.text = "Some text"
-    dialog.show()
+inline fun <T> Iterable<T>.filter(
+    predicate: (T) -> Boolean
+): List<T> {
+    val list = arrayListOf<T>()
+    for (elem in this) {
+        if (predicate(elem)) {
+            list.add(elem)
+        }
+    }
+    return list
 }

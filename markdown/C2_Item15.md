@@ -8,6 +8,7 @@ String name = null;
 
 
 ```
+//1
 var name: String? = null
   get() = field?.toUpperCase()
   set(value) {
@@ -34,6 +35,7 @@ var date: Date
 
 
 ```
+//2
 interface Person {
   val name: String
 }
@@ -41,6 +43,7 @@ interface Person {
 
 
 ```
+//3
 open class Supercomputer {
   open val theAnswer: Long = 42
 }
@@ -90,11 +93,13 @@ fun Tree<Int>.sum(): Int = when (this) {
 
 
 ```
+//4
 val s = (1..100).sum()
 ```
 
 
 ```
+//5
 // DON’T DO THIS!
 class UserIncorrect {
   private var name: String = ""

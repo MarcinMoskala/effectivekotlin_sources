@@ -50,6 +50,7 @@ fun createListCreateA(blackhole: Blackhole) {
 
 
 ```
+//1
 class Snapshot(
     var afterHours: SessionDetails,
     var preMarket: SessionDetails,
@@ -71,6 +72,7 @@ data class SessionDetails(
 
 
 ```
+//2
 data class SessionDetails(
     val open: Double = Double.NaN,
     val high: Double = Double.NaN,

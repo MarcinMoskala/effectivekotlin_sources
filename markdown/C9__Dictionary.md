@@ -14,6 +14,7 @@ class A {
 
 
 ```
+//1
 val double = fun(i: Int) = i * 2 // Anonymous function
 val triple = { i: Int -> i * 3 } // Lambda expression,
 // which is a shorter notation for an anonymous function
@@ -21,6 +22,7 @@ val triple = { i: Int -> i * 3 } // Lambda expression,
 
 
 ```
+//2
 class IntWrapper(val i: Int) {
     fun doubled(): IntWrapper = IntWrapper(i * 2)
 }
@@ -45,6 +47,7 @@ val tripledReference = IntWrapper::tripled
 
 
 ```
+//3
 class User(
     val name: String,
     val surname: String
@@ -78,7 +81,7 @@ randomString(10 + 20) // 30 is an argument
 
 
 ```
-//1
+//4
 inline fun <reified T> printName() { // T is a type parameter
     print(T::class.simpleName)
 }
@@ -90,6 +93,7 @@ fun main() {
 
 
 ```
+//5
 class SomeObject {
     val text: String
 
@@ -102,6 +106,7 @@ class SomeObject {
 
 
 ```
+//6
 class SomeObject(text: String) {
     val text: String = text
 
@@ -113,6 +118,7 @@ class SomeObject(text: String) {
 
 
 ```
+//7
 class SomeObject(val text: String) {
     init {
         print("Creating object")
@@ -133,6 +139,7 @@ class SomeObject(val text: String) {
 
 
 ```
+//8
 class SomeObject @JvmOverloads constructor(
     val text: String = ""
 ) {

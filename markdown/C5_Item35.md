@@ -25,6 +25,7 @@ class UserService(
 
 
 ```
+//1
 interface DatabaseClient { /* ... */ }
 class PostgresDatabaseClient : DatabaseClient { /* ... */ }
 

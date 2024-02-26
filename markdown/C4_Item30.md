@@ -38,6 +38,7 @@ enum class MessageLength { SHORT, LONG }
 
 
 ```
+//1
 /**
 * Powerset returns a set of all subsets of the receiver
 * including itself and the empty set
@@ -51,6 +52,7 @@ fun <T> Collection<T>.powerset(): Set<Set<T>> =
 
 
 ```
+//2
 /**
 * Powerset returns a set of all subsets of the receiver
 * including itself and empty set
@@ -73,11 +75,13 @@ private tailrec fun <T> powerset(
 
 
 ```
+//3
 fun List<Int>.product() = fold(1) { acc, i -> acc * i }
 ```
 
 
 ```
+//4
 // Product of all numbers in a list
 fun List<Int>.product() = fold(1) { acc, i -> acc * i }
 ```
@@ -132,6 +136,7 @@ public fun <T> listOf(vararg elements: T): List<T> =
 
 
 ```
+//5
 /**
 * This is an example descriptions linking to [element1],
 * [com.package.SomeClass.element2] and
@@ -191,6 +196,7 @@ class ElectricCar: Car {
 
 
 ```
+//6
 interface Car {
   /**
    * Changes car direction.

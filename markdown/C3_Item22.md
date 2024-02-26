@@ -1,4 +1,5 @@
 ```
+//1
 class Forest(val name: String) {
 
   fun addTree(name: String) {
@@ -9,6 +10,7 @@ class Forest(val name: String) {
 
 
 ```
+//2
 interface Tree
 class Birch: Tree
 class Spruce: Tree
