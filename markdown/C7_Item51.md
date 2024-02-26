@@ -262,7 +262,6 @@ private class Reader {
 
 
 ```
-//6
 inline fun a() {
    b()
 }
@@ -276,7 +275,7 @@ inline fun c() {
 
 
 ```
-//7
+//6
 inline fun printThree() {
    print(3)
 }
@@ -308,12 +307,58 @@ inline fun threeThreeThreePrintThree() {
 
 
 ```
-//8
+//7
 inline fun printThree() {
    print(3)
 }
 
 inline fun threePrintThree() {
+   print(3)
+   print(3)
+   print(3)
+}
+```
+
+
+```
+//8
+inline fun threeThreePrintThree() {
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+}
+
+inline fun threeThreeThreePrintThree() {
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
+   print(3)
    print(3)
    print(3)
    print(3)
@@ -323,52 +368,6 @@ inline fun threePrintThree() {
 
 ```
 //9
-inline fun threeThreePrintThree() {
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-}
-
-inline fun threeThreeThreePrintThree() {
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-   print(3)
-}
-```
-
-
-```
-//10
 inline fun requestNewToken(
    hasToken: Boolean,
    crossinline onRefresh: () -> Unit,
