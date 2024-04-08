@@ -1,6 +1,5 @@
 package f_C2_Item15.s_5
 
-// DON’T DO THIS!
 class UserIncorrect {
   private var name: String = ""
 

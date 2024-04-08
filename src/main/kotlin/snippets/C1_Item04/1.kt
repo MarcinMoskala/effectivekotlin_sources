@@ -9,4 +9,3 @@ val buzz = {
     val c = 3
     print(a + c)
 }
-// Here we can see a, but not b nor c

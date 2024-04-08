@@ -68,7 +68,7 @@ class Node(val name: String) {
         // Compilation error
 
   fun create(name: String): Node? = Node(name)
-}        
+}
 ```
 
 
